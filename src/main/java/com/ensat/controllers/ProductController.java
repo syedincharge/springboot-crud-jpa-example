@@ -19,6 +19,7 @@ public class ProductController {
 
     @Autowired
     public void setProductService(ProductService productService) {
+
         this.productService = productService;
     }
 

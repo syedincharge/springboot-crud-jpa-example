@@ -23,21 +23,25 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Iterable<Product> listAllProducts() {
+
         return productRepository.findAll();
     }
 
     @Override
     public Optional<Product> getProductById(Integer id) {
+
         return productRepository.findById(id);
     }
 
     @Override
     public Product saveProduct(Product product) {
+
         return productRepository.save(product);
     }
 
     @Override
     public void deleteProduct(Integer id) {
+
         productRepository.deleteById(id);
     }
 
